@@ -24,7 +24,7 @@ Onde VALOR é o novo valor da variável.
 */
 function novoValor(value){
   valor = value;
-  console.log(valor);
+  console.log("O valor da variável agora é " + valor);
 }
 
 // Invoque a função criada acima.
@@ -46,7 +46,7 @@ function calculo2(a, b, c) {
   if (a == null || b == null || c == null) {
     console.log("Preencha todos os valores corretamente");
   } else {
-    return (a * b * c) + '2'; // concatenei o resultado com '2' - foi o que entendi
+    return (a * b * c) + 2;
   }
 }
 
@@ -60,7 +60,7 @@ calculo2(3, 4);
 calculo2(3, 4, 5)
 
 // Qual o resultado da invocação acima? (Use comentários para mostrar o valor retornado).
-// '602'
+// 62
 
 /*
 Crie uma função com as seguintes características:
