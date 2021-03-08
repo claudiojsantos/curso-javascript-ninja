@@ -69,7 +69,7 @@ passado por parâmetro.
 */
 carro.mudarCor = function(novaCor){
   if (novaCor) {
-    return carro.cor = novaCor;
+    carro.cor = novaCor;
   }
 }
 
@@ -100,7 +100,7 @@ Crie um método chamado `obterMarcaModelo`, que retorne:
 Para retornar os valores de marca e modelo, utilize os métodos criados.
 */
 carro.obterMarcaModelo = function(){
-  return 'Este carro é um ' + carro.marca + ' ' + carro.modelo;
+  return 'Este carro é um ' + carro.obterMarca() + ' ' + carro.obterModelo();
 }
 
 /*
@@ -158,10 +158,10 @@ Qual a cor atual do carro?
 carro.obterCor(); // "branco"
 
 // Mude a cor do carro para vermelho.
-carro.mudarCor('azul'); 
+carro.mudarCor('vermelho'); 
 
 // E agora, qual a cor do carro?
-carro.obterCor(); // "azul"
+carro.obterCor(); // "vermelho"
 
 // Mude a cor do carro para verde musgo.
 carro.mudarCor('verde musgo');
@@ -170,7 +170,7 @@ carro.mudarCor('verde musgo');
 carro.obterCor(); // "verde musgo"
 
 // Qual a marca e modelo do carro?
-carro.obterMarca(); // "Ford"
+carro.obterMarcaModelo(); // "Ford KA"
 
 // Adicione 2 pessoas no carro.
 carro.adicionarPassageiros(2);
